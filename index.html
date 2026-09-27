@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CodeAlpha Image Gallery - Responsive Image Gallery with Lightbox and Navigation by Muhammad Saim Ahmad">
+  <title>CodeAlpha Image Gallery | Responsive Lightbox Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header Section -->
+    <header class="gallery-header">
+
+      <h1 class="main-title"> Image Gallery</h1>
+      <!-- Category Filter Tabs (Bonus Feature) -->
+      <nav class="filter-container" aria-label="Image category filters">
+        <button type="button" class="filter-btn active" data-filter="all">All Photos</button>
+        <button type="button" class="filter-btn" data-filter="nature">Nature</button>
+        <button type="button" class="filter-btn" data-filter="cars">Cars</button>
+        <button type="button" class="filter-btn" data-filter="technology">Technology</button>
+        <button type="button" class="filter-btn" data-filter="travel">Travel</button>
+      </nav>
+    </header>
+
+    <!-- Gallery Grid Section -->
+    <main class="gallery-section">
+      <div class="gallery-grid" id="galleryGrid">
+        
+        <!-- Image Card 1 -->
+        <article class="gallery-card" data-category="nature" data-index="0">
+          <div class="image-wrapper">
+            <img src="images/image1.jpg" alt="Yosemite Valley" loading="lazy">
+            <div class="card-overlay">
+              <span class="category-tag">Nature</span>
+              <h3 class="card-title">Yosemite Valley</h3>
+              <p class="card-desc">Majestic granite peaks reflecting on serene alpine waters</p>
+              <div class="view-indicator" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>View Fullscreen</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Image Card 2 -->
+        <article class="gallery-card" data-category="cars" data-index="1">
+          <div class="image-wrapper">
+            <img src="images/image2.jpg" alt="Modern Supercar" loading="lazy">
+            <div class="card-overlay">
+              <span class="category-tag">Cars</span>
+              <h3 class="card-title">Modern Supercar</h3>
+              <p class="card-desc">High-performance aerodynamics and futuristic automotive styling</p>
+              <div class="view-indicator" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>View Fullscreen</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Image Card 3 -->
+        <article class="gallery-card" data-category="technology" data-index="2">
+          <div class="image-wrapper">
+            <img src="images/image3.jpg" alt="Cyber Processor" loading="lazy">
+            <div class="card-overlay">
+              <span class="category-tag">Technology</span>
+              <h3 class="card-title">Cyber Processor</h3>
+              <p class="card-desc">Intricate illuminated circuits powering next-generation computing</p>
+              <div class="view-indicator" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>View Fullscreen</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Image Card 4 -->
+        <article class="gallery-card" data-category="travel" data-index="3">
+          <div class="image-wrapper">
+            <img src="images/image4.jpg" alt="Tropical Paradise" loading="lazy">
+            <div class="card-overlay">
+              <span class="category-tag">Travel</span>
+              <h3 class="card-title">Tropical Paradise</h3>
+              <p class="card-desc">Golden sunlit sands along calm turquoise ocean shores</p>
+              <div class="view-indicator" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>View Fullscreen</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Image Card 5 -->
+        <article class="gallery-card" data-category="nature" data-index="4">
+          <div class="image-wrapper">
+            <img src="images/image5.jpg" alt="Sunlit Forest" loading="lazy">
+            <div class="card-overlay">
+              <span class="category-tag">Nature</span>
+              <h3 class="card-title">Sunlit Forest</h3>
+              <p class="card-desc">Warm morning light filtering through peaceful mossy trees</p>
+              <div class="view-indicator" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>View Fullscreen</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Image Card 6 -->
+        <article class="gallery-card" data-category="cars" data-index="5">
+          <div class="image-wrapper">
+            <img src="images/image6.jpg" alt="Classic Sports Roadster" loading="lazy">
+            <div class="card-overlay">
+              <span class="category-tag">Cars</span>
+              <h3 class="card-title">Classic Sports Roadster</h3>
+              <p class="card-desc">Timeless automotive curves, vintage heritage and pure speed</p>
+              <div class="view-indicator" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>View Fullscreen</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- Lightbox Modal Window -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Fullscreen image viewer">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      
+      <div class="lightbox-container">
+        <!-- Close Button -->
+        <button type="button" class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Close lightbox (Esc)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Previous Button -->
+        <button type="button" class="lightbox-btn lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image (Left Arrow)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Image & Caption Wrapper -->
+        <figure class="lightbox-figure">
+          <div class="lightbox-media-wrapper">
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-spinner" id="lightboxSpinner"></div>
+          </div>
+          
+          <figcaption class="lightbox-caption">
+            <div class="caption-header">
+              <span class="category-tag" id="lightboxCategory">Nature</span>
+              <span class="lightbox-counter" id="lightboxCounter">1 / 6</span>
+            </div>
+            <h2 class="lightbox-title" id="lightboxTitle">Image Title</h2>
+            <p class="lightbox-desc" id="lightboxDesc">Image description</p>
+          </figcaption>
+        </figure>
+
+        <!-- Next Button -->
+        <button type="button" class="lightbox-btn lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image (Right Arrow)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Bottom Keyboard Navigation Tip -->
+      <aside class="lightbox-keyboard-hint">
+        Use <kbd>&larr;</kbd> <kbd>&rarr;</kbd> to navigate &bull; <kbd>ESC</kbd> to close
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="gallery-footer">
+      <p class="author-credits">
+        Developed by <strong>Muhammad Saim Ahmad</strong> &bull; CodeAlpha Frontend Development Internship
+      </p>
+
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
